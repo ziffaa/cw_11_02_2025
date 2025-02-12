@@ -58,7 +58,6 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPara
 	break;
 	case WM_MOUSEMOVE:
 	{
-		// устанавливаем тот или иной курсор в зависимости от местонахождения указателя мыши
 		RECT rect;
 		GetClientRect(hWnd, &rect);
 		int x = LOWORD(lParam);
